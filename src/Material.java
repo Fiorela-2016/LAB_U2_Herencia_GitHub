@@ -66,11 +66,11 @@ public abstract class Material {
             System.out.println(" Material devuelto exitosamente ");
         }
     }
-// base
+
     public void mostrarInfo() {
 
         System.out.println("ID: " + id);
         System.out.println("Titulo: " + titulo);
-        System.out.println("Disponible: " + disponible);
+        System.out.println("Disponibles: " + disponible);
     }
 }
