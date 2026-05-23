@@ -10,10 +10,10 @@
 public enum Genero {
     
     Ciber_seguridad,
-    Administracion,
+    Programacion,
     Inteligencia_Artificial,
-    Medicina,
-    Historia,
-    Literatura
+    redes,
+    Base_Datos,
+    Investigacion
     
 }
