@@ -13,7 +13,7 @@ public abstract class Material {
     private String titulo;
     private boolean disponible;
 
-    private static int contadorMateriales;
+    private static int contadorMateriales = 0;
 
     public Material(int id, String titulo) {
 
@@ -71,6 +71,6 @@ public abstract class Material {
 
         System.out.println("ID: " + id);
         System.out.println("Titulo: " + titulo);
-        System.out.println("Disponibles: " + disponible);
+        System.out.println("Disponible: " + disponible);
     }
 }
