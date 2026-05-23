@@ -9,4 +9,11 @@
  */
 public enum Genero {
     
+    Ciber_segurida,
+    Administracion,
+    Inteligencia_Artificial,
+    Medicina,
+    Historia,
+    Literatura
+    
 }
