@@ -9,7 +9,7 @@
  */
 public enum Genero {
     
-    Ciber_seguridad,
+    Ciber_segurida,
     Programacion,
     Inteligencia_Artificial,
     redes,
