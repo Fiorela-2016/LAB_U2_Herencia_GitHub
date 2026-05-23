@@ -33,7 +33,13 @@ public abstract class Material {
     }
 
     public void setTitulo(String titulo) {
-        this.titulo = titulo;
+        if(titulo != null && ! titulo.trim().isEmpty()) {
+            this.titulo = titulo;
+        }
+        else {
+            System.out.println("El titulo es invalido ");
+        }
+     
     }
 
     public boolean isDisponible() {
@@ -49,7 +55,7 @@ public abstract class Material {
             System.out.println("El material ha sido prestado ");
         } else {
             disponible = false;
-            System.out.println(" Material prestado exitosamente ");
+            System.out.println(" El material no esta disponible ");
         }
     }
 
@@ -67,10 +73,5 @@ public abstract class Material {
         }
     }
 
-    public void mostrarInfo() {
-
-        System.out.println("ID: " + id);
-        System.out.println("Titulo: " + titulo);
-        System.out.println("Disponible: " + disponible);
-    }
+    public abstract void mostrarInfo(); 
 }
