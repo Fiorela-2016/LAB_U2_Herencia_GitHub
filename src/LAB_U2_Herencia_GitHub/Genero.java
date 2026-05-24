@@ -7,6 +7,7 @@ package LAB_U2_Herencia_GitHub;
  *
  * @author fiore
  */
+
 public enum Genero {
     
     Ciber_seguridad,
