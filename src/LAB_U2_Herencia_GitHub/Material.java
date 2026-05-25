@@ -10,6 +10,7 @@ package LAB_U2_Herencia_GitHub;
  *
  * @author fiore
  */
+
 public abstract class Material {
 
     private final int id;

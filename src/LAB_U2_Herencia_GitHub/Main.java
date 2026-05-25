@@ -7,6 +7,7 @@ package LAB_U2_Herencia_GitHub;
  *
  * @author fiore
  */
+
 public class Main {
     public static void main(String[]args) {
         
