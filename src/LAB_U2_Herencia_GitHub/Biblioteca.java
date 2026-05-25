@@ -5,7 +5,6 @@
 package LAB_U2_Herencia_GitHub;
 
 import java.util.ArrayList;
-
 /**
  *
  * @author Geirel
