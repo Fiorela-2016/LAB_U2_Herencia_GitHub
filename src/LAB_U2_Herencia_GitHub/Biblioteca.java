@@ -4,43 +4,49 @@
  */
 package LAB_U2_Herencia_GitHub;
 
-import java.util.ArrayList;
 /**
  *
  * @author Geirel
  */
+import java.util.ArrayList;
 public class Biblioteca {
-        private ArrayList <Material> ArrayList;
     
-    //Constructor
+    private ArrayList<Material> materiales;
+
+    // Constructor
     public Biblioteca() {
         materiales = new ArrayList<>();
     }
 
-    //Agregar materiales
+    // Agregar materiales
     public void agregarMaterial(Material material) {
         materiales.add(material);
     }
 
-    //Listar todos los materiales
+    // Listar materiales
     public void listarMateriales() {
+
         for (Material material : materiales) {
-            System.out.println(material);
+            material.mostrarInfo();
         }
 
     }
 
-    //Buscar por ID
+    // Buscar por ID
     public Material buscarPorId(int id) {
+
         for (Material material : materiales) {
+
             if (material.getId() == id) {
                 return material;
             }
+
         }
+
         return null;
     }
-    
-    //Poder buscar por título
+
+    // Buscar por titulo
     public Material buscarPorTitulo(String titulo) {
 
         for (Material material : materiales) {
@@ -48,32 +54,43 @@ public class Biblioteca {
             if (material.getTitulo().equalsIgnoreCase(titulo)) {
                 return material;
             }
+
         }
+
         return null;
     }
-    
+
     // Prestar material
     public void prestarMaterial(int id) {
+
         Material material = buscarPorId(id);
+
         if (material != null) {
             material.prestar();
         } else {
-            System.out.println("Material no encontrado.");
+            System.out.println("Material no encontrado");
         }
+
     }
 
-    //Devolver material
+    // Devolver material
     public void devolverMaterial(int id) {
+
         Material material = buscarPorId(id);
+
         if (material != null) {
             material.devolver();
         } else {
-            System.out.println("Material no encontrado.");
+            System.out.println("Material no encontrado");
         }
+
     }
 
-    //Mostrar cantidad total de materiales
+    // Mostrar total de materiales
     public void mostrarTotalMateriales() {
-        System.out.println("Total de materiales: " + Material.getTotalMateriales());
+
+        System.out.println("Total de materiales: "
+                + Material.getContadorMateriales());
+
     }
 }
